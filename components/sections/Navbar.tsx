@@ -9,7 +9,6 @@ const navLinks = [
   { name: "Home", href: "#home" },
   { name: "About", href: "#about" },
   { name: "Skills", href: "#skills" },
-  { name: "Experience", href: "#experience" },
   { name: "Projects", href: "#projects" },
   { name: "Contact", href: "#contact" },
 ];
@@ -36,7 +35,7 @@ export default function Navbar() {
             }
           });
         },
-        { threshold: 0.5 }
+        { rootMargin: "-30% 0px -40% 0px", threshold: 0 }
       );
       observer.observe(section);
       return { observer, section };
@@ -59,7 +58,7 @@ export default function Navbar() {
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
         <Link href="#home" className="text-2xl font-heading font-bold text-white tracking-wider">
-          Dr. <span className="text-primary">John Doe</span>
+          U. <span className="text-primary">Dayakar</span>
         </Link>
 
         {/* Desktop Nav */}

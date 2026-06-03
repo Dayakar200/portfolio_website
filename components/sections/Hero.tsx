@@ -7,10 +7,12 @@ import { Code, Briefcase, Globe } from "lucide-react";
 import Link from "next/link";
 
 const titles = [
-  "Data Scientist",
-  "AI/ML Engineer",
-  "Machine Learning Researcher",
-  "Python & Deep Learning Expert",
+  "AI/ML Enthusiast",
+  "Aspiring Data Scientist",
+  "Exploring Machine Learning",
+  "Building AI Solutions for Real‑World Problems ",
+  "Python & Deep Learning Learner",
+  "AI & Data Science Fresher",
 ];
 
 export default function Hero() {
@@ -39,7 +41,7 @@ export default function Hero() {
         >
           <h2 className="text-primary font-medium tracking-widest uppercase mb-4">Welcome to my portfolio</h2>
           <h1 className="text-5xl md:text-7xl font-heading font-bold text-white mb-6">
-            Hi, I&apos;m John Doe
+            Hi, I&apos;m Dayakar
           </h1>
           
           <div className="h-12 mb-6">
@@ -55,8 +57,7 @@ export default function Hero() {
           </div>
 
           <p className="max-w-2xl mx-auto text-lg text-muted-foreground mb-10 leading-relaxed">
-            Bridging the gap between complex data and actionable insights. Specializing in building scalable AI solutions and driving innovation through machine learning.
-          </p>
+Exploring the world of Artificial Intelligence, Machine Learning and Data Science by Building AI solutions to solve real‑world problems          </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
             <Link href="#projects" className="w-full sm:w-auto">
@@ -64,7 +65,12 @@ export default function Hero() {
                 View My Work
               </Button>
             </Link>
-            <a href="/resume.pdf" download className="w-full sm:w-auto">
+            <a href="https://drive.google.com/file/d/1GzE1CyNzfiLU05UEfRWwuvsyGz7obshA/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+              <Button variant="outline" size="lg" className="border-primary text-primary hover:bg-primary/10 w-full">
+                View Resume
+              </Button>
+            </a>
+            <a href="https://drive.google.com/uc?export=download&id=1GzE1CyNzfiLU05UEfRWwuvsyGz7obshA" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
               <Button variant="outline" size="lg" className="border-primary text-primary hover:bg-primary/10 w-full">
                 Download Resume
               </Button>

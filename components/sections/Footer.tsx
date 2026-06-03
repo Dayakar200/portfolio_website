@@ -15,10 +15,10 @@ export default function Footer() {
           
           <div className="text-center md:text-left">
             <Link href="#home" className="text-2xl font-heading font-bold text-white tracking-wider">
-              Dr. <span className="text-primary">John Doe</span>
+              U. <span className="text-primary">Dayakar</span>
             </Link>
             <p className="text-muted-foreground text-sm mt-2">
-              Data Scientist & AI/ML Engineer
+              AI/ML Enthusiast | Aspiring Data Scientist
             </p>
           </div>
 
@@ -43,7 +43,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-8 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-muted-foreground">
-          <p>© {new Date().getFullYear()} John Doe. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} U. Dayakar. All rights reserved.</p>
           <p>Built with Next.js, Tailwind CSS & Framer Motion</p>
         </div>
       </div>

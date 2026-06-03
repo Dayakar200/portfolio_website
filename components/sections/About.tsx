@@ -5,12 +5,6 @@ import { Database, Brain, Code, LineChart } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 export default function About() {
-  const stats = [
-    { label: "Years Experience", value: "5+" },
-    { label: "Projects Delivered", value: "30+" },
-    { label: "Publications", value: "10+" },
-  ];
-
   const domains = [
     { icon: LineChart, title: "Data Analysis", desc: "Extracting actionable insights from complex, high-dimensional datasets." },
     { icon: Brain, title: "Machine Learning", desc: "Developing robust predictive models and scalable ML pipelines." },
@@ -52,20 +46,9 @@ export default function About() {
             viewport={{ once: true }}
           >
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              I am a passionate Data Scientist and AI Researcher with a Ph.D. in Computer Science. My core expertise lies in developing scalable machine learning models and implementing cutting-edge deep learning architectures.
-            </p>
+I am an aspiring professional at the beginning of my journey in Artificial Intelligence, Machine Learning, and Data Science. With a strong academic foundation and hands-on exposure to projects, I am passionate about exploring how intelligent systems can transform data into meaningful insights.        </p>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              Over the past 5 years, I have successfully delivered AI solutions across finance, healthcare, and e-commerce, driving measurable business impact through data-driven strategies and predictive analytics.
-            </p>
-
-            <div className="grid grid-cols-3 gap-4">
-              {stats.map((stat, i) => (
-                <div key={i} className="text-center p-4 bg-background rounded-lg border border-border">
-                  <h3 className="text-2xl md:text-3xl font-bold text-primary mb-2">{stat.value}</h3>
-                  <p className="text-sm text-muted-foreground font-medium">{stat.label}</p>
-                </div>
-              ))}
-            </div>
+ My curiosity drives me to continuously learn new tools, frameworks, and techniques, while my goal is to apply these skills to solve real-world challenges. As I step into the industry, I am eager to contribute fresh ideas, grow alongside experienced mentors, and build impactful solutions that bridge the gap between technology and human needs.            </p>
           </motion.div>
         </div>
 

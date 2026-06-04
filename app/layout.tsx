@@ -6,11 +6,11 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair" });
 
 export const metadata: Metadata = {
-  title: "Dr. John Doe | Data Scientist & AI/ML Engineer",
-  description: "Portfolio of Dr. John Doe, Data Scientist and AI/ML Engineer with 5+ years of experience.",
+  title: "U.Dayakar | Aspiring Data Scientist & AI/ML Engineer",
+  description: "Portfolio of U.Dayakar, Aspiring Data Scientist and AI/ML Engineer.",
   openGraph: {
-    title: "Dr. John Doe | Data Scientist & AI/ML Engineer",
-    description: "Portfolio of Dr. John Doe, Data Scientist and AI/ML Engineer with 5+ years of experience.",
+    title: "U.Dayakar | Aspiring Data Scientist & AI/ML Engineer",
+    description: "Portfolio of U.Dayakar, Aspiring Data Scientist and AI/ML Engineer.",
     images: [{ url: "/placeholder-og.jpg", width: 1200, height: 630 }],
   },
 };

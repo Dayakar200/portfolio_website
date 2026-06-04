@@ -35,7 +35,7 @@ export default function About() {
           >
             <div className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-tr from-primary to-blue-600 p-1">
               <div className="w-full h-full bg-card rounded-full flex items-center justify-center border-4 border-background">
-                <span className="text-6xl font-heading font-bold text-primary">JD</span>
+                <span className="text-6xl font-heading font-bold text-primary">UD</span>
               </div>
             </div>
           </motion.div>
@@ -57,7 +57,7 @@ I am an aspiring professional at the beginning of my journey in Artificial Intel
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <h3 className="text-2xl font-heading font-bold text-center mb-10">What I Do</h3>
+          <h3 className="text-2xl font-heading font-bold text-center mb-10">What I enjoy doing</h3>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {domains.map((domain, i) => (
               <Card key={i} className="bg-background border-border hover:border-primary/50 transition-colors">

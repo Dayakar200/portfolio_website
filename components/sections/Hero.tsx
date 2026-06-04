@@ -43,7 +43,7 @@ export default function Hero() {
           <h1 className="text-5xl md:text-7xl font-heading font-bold text-white mb-6">
             Hi, I&apos;m Dayakar
           </h1>
-          
+
           <div className="h-12 mb-6">
             <motion.p
               key={titleIndex}
@@ -57,7 +57,7 @@ export default function Hero() {
           </div>
 
           <p className="max-w-2xl mx-auto text-lg text-muted-foreground mb-10 leading-relaxed">
-Exploring the world of Artificial Intelligence, Machine Learning and Data Science by Building AI solutions to solve real‑world problems          </p>
+            Exploring the world of Artificial Intelligence, Machine Learning and Data Science by Building AI solutions to solve real‑world problems          </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
             <Link href="#projects" className="w-full sm:w-auto">
@@ -80,8 +80,8 @@ Exploring the world of Artificial Intelligence, Machine Learning and Data Scienc
           <div className="flex items-center justify-center gap-6">
             {[
               { icon: Briefcase, href: "#" },
-              { icon: Code, href: "#" },
-              { icon: Globe, href: "#" },
+              { icon: Code, target: "_blank", href: "https://github.com/Dayakar200" },
+              { icon: Globe, target: "_blank", href: "https://dayakar200.github.io" },
               // Kaggle doesn't have a built-in Lucide icon easily, using a text fallback or a generic icon
               { icon: () => <span className="font-bold text-xl leading-none">k</span>, href: "#" }
             ].map((social, i) => (

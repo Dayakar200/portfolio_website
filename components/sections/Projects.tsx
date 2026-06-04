@@ -11,12 +11,12 @@ const categories = ["All", "Machine Learning", "Deep Learning", "NLP", "Computer
 const projects = [
   {
     id: 1,
-    title: "Real-time Fraud Detection",
-    category: "Machine Learning",
-    description: "An ensemble ML model processing streaming transaction data to identify fraudulent activities with 99.8% precision.",
-    tech: ["Python", "XGBoost", "Kafka", "FastAPI"],
+    title: "AI-Powered Diabetic Foot Ulcer (DFU) Monitoring System",
+    category: "Deep Learning",
+    description: "An AI-powered system designed for early detection, segmentation, and risk progression prediction of diabetic foot ulcers using deep learning (U-Net). Features a dual-view medical dashboard for wound area visualization.",
+    tech: ["FastAPI", "React", "PyTorch", "U-Net", "Tailwind CSS", "TypeScript"],
     github: "#",
-    demo: "#"
+    demo: "https://foot-ulcer-detection-using-cnn-mbpx-ahnmha8yy.vercel.app/"
   },
   {
     id: 2,

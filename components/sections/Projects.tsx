@@ -15,7 +15,7 @@ const projects = [
     category: "Deep Learning",
     description: "An AI-powered system designed for early detection, segmentation, and risk progression prediction of diabetic foot ulcers using deep learning (U-Net). Features a dual-view medical dashboard for wound area visualization.",
     tech: ["FastAPI", "React", "PyTorch", "U-Net", "Tailwind CSS", "TypeScript"],
-    github: "#",
+    github: "https://github.com/Dayakar200/Foot_ulcer_detection_using_CNN",
     demo: "https://foot-ulcer-detection-using-cnn-mbpx-ahnmha8yy.vercel.app/"
   },
   {
@@ -118,10 +118,10 @@ export default function Projects() {
                     <span className="text-muted-foreground/50 font-bold text-xl">{project.category}</span>
                     <div className="absolute inset-0 bg-primary/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 flex items-center justify-center backdrop-blur-sm">
                       <div className="flex gap-4">
-                        <a href={project.github} className="w-10 h-10 rounded-full bg-background flex items-center justify-center text-white hover:text-primary transition-colors">
+                        <a href={project.github} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-background flex items-center justify-center text-white hover:text-primary transition-colors">
                           <Code size={20} />
                         </a>
-                        <a href={project.demo} className="w-10 h-10 rounded-full bg-background flex items-center justify-center text-white hover:text-primary transition-colors">
+                        <a href={project.demo} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-background flex items-center justify-center text-white hover:text-primary transition-colors">
                           <ExternalLink size={20} />
                         </a>
                       </div>

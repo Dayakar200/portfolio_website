@@ -34,79 +34,47 @@ export default function Contact() {
           <div className="w-20 h-1 bg-primary mx-auto rounded-full"></div>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
-          {/* Contact Info */}
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            className="flex flex-col justify-between space-y-8"
-          >
-            <div>
-              <h3 className="text-3xl font-heading font-bold text-white mb-6">Let&apos;s Connect</h3>
-              <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
-                Whether you have a question, a project proposal, or just want to say hi, I&apos;ll try my best to get back to you!
-              </p>
-
-              <div className="space-y-4">
-                <Card className="bg-card/50 backdrop-blur-sm border-border hover:border-primary/40 hover:bg-card transition-all duration-300">
-                  <CardContent className="p-6 flex items-center gap-4">
-                    <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary shadow-inner">
-                      <Mail size={24} />
-                    </div>
-                    <div>
-                      <h4 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Email</h4>
-                      <a href="mailto:hello@johndoe.ai" className="text-white hover:text-primary transition-colors text-sm font-medium">hello@johndoe.ai</a>
-                    </div>
-                  </CardContent>
-                </Card>
-
-                <Card className="bg-card/50 backdrop-blur-sm border-border hover:border-primary/40 hover:bg-card transition-all duration-300">
-                  <CardContent className="p-6 flex items-center gap-4">
-                    <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary shadow-inner">
-                      <Briefcase size={24} />
-                    </div>
-                    <div>
-                      <h4 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">LinkedIn</h4>
-                      <a href="#" className="text-white hover:text-primary transition-colors text-sm font-medium">linkedin.com/in/johndoe</a>
-                    </div>
-                  </CardContent>
-                </Card>
-              </div>
-            </div>
-
-            <div className="flex items-center gap-3 text-sm text-muted-foreground bg-primary/5 border border-primary/10 rounded-full px-5 py-3 w-fit">
+        <div className="max-w-2xl mx-auto text-center mb-12">
+          <p className="text-muted-foreground text-lg mb-6 leading-relaxed">
+            Whether you have a question, a project proposal, or just want to say hi, I&apos;ll try my best to get back to you!
+          </p>
+          <div className="flex justify-center mb-8">
+            <div className="flex items-center gap-3 text-sm text-muted-foreground bg-primary/5 border border-primary/10 rounded-full px-5 py-3">
               <span className="relative flex h-3 w-3">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
               </span>
               <span className="font-medium">Available for new opportunities</span>
             </div>
-          </motion.div>
+          </div>
+        </div>
 
+        <div className="max-w-xl mx-auto">
           {/* Contact Form */}
           <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
             <Card className="bg-card/45 backdrop-blur-md border-border p-2 shadow-2xl hover:border-primary/20 transition-all duration-500">
               <CardContent className="p-6">
                 {status === "success" ? (
-                  <div className="h-full min-h-[400px] flex flex-col items-center justify-center text-center space-y-4">
+                  <div className="h-full min-h-[300px] flex flex-col items-center justify-center text-center space-y-4">
                     <CheckCircle2 className="w-16 h-16 text-primary animate-bounce" />
                     <h3 className="text-2xl font-bold text-white">Message Sent!</h3>
                     <p className="text-muted-foreground">Thank you for reaching out. I&apos;ll get back to you shortly.</p>
                   </div>
                 ) : (
                   <form onSubmit={handleSubmit} className="space-y-5">
-                    <div className="space-y-2">
-                      <label htmlFor="name" className="text-sm font-semibold text-white">Name</label>
-                      <Input id="name" required placeholder="Your Name" className="bg-background/80 border-border focus-visible:ring-primary" />
-                    </div>
-                    <div className="space-y-2">
-                      <label htmlFor="email" className="text-sm font-semibold text-white">Email</label>
-                      <Input id="email" type="email" required placeholder="your.email@example.com" className="bg-background/80 border-border focus-visible:ring-primary" />
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                      <div className="space-y-2">
+                        <label htmlFor="name" className="text-sm font-semibold text-white">Name</label>
+                        <Input id="name" required placeholder="Your Name" className="bg-background/80 border-border focus-visible:ring-primary" />
+                      </div>
+                      <div className="space-y-2">
+                        <label htmlFor="email" className="text-sm font-semibold text-white">Email</label>
+                        <Input id="email" type="email" required placeholder="your.email@example.com" className="bg-background/80 border-border focus-visible:ring-primary" />
+                      </div>
                     </div>
                     <div className="space-y-2">
                       <label htmlFor="subject" className="text-sm font-semibold text-white">Subject</label>
